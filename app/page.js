@@ -10,7 +10,7 @@ const  poppins= localFont({
 export default function Home() {
   return (
     <main className="bg-purple-100">
-      <section className="grid grid-cols-2 h-[50vh]">
+      <section className="grid grid-cols-2 h-[55vh]">
         <div className="flex flex-col items-center gap-4 justify-center">
           <p className={`text-3xl font-bold ${poppins.className}`}>
             The Best URL Shortener in the Market
