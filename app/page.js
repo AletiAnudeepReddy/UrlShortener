@@ -1,8 +1,8 @@
 import Image from "next/image";
 import localFont from "next/font/local"
 import Link from "next/link";
-const  poppins= localFont({
-  src:"./Poppins-ExtraBold.ttf",
+const poppins = localFont({
+  src: "./Poppins-ExtraBold.ttf",
   variable: "--font-poppins",
   subsets: ["latin"],
 });
@@ -10,7 +10,7 @@ const  poppins= localFont({
 export default function Home() {
   return (
     <main className="bg-purple-100">
-      <section className="grid grid-cols-2 h-[55vh]">
+      <section className="grid grid-cols-2 h-[65vh]">
         <div className="flex flex-col items-center gap-4 justify-center">
           <p className={`text-3xl font-bold ${poppins.className}`}>
             The Best URL Shortener in the Market
@@ -24,9 +24,34 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-start relative">
-          <Image className="mix-blend-darken" alt="vector" src={"/vector.jpg"} fill={true}/>
+          <Image className="mix-blend-darken" alt="vector" src={"/vector.jpg"} fill={true} />
         </div>
       </section>
+      <section className="py-12 px-6 md:px-24 bg-purple-50">
+        <h2 className={`text-2xl md:text-3xl font-bold text-center  mb-10 ${poppins.className}`}>
+          How It Works
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="flex flex-col items-center gap-3 bg-purple-100 hover:bg-purple-50 rounded-lg p-15 shadow-lg">
+            <Image className="mix-blend-darken" src={"/step1.png"} width={80} height={80} alt="Step 1" />
+            <h3 className="text-purple-700 text-lg font-semibold">Paste Your URL</h3>
+            <p className="text-gray-600">Enter the long URL you want to shorten. No login required!</p>
+          </div>
+
+          <div className="flex flex-col items-center gap-3  bg-purple-100 hover:bg-purple-50 rounded-lg p-15 shadow-lg">
+            <Image className="mix-blend-darken opacity-70" src={"/step2.png"} width={80} height={80} alt="Step 2" />
+            <h3 className="text-purple-700 text-lg font-semibold">Click Generate</h3>
+            <p className=" text-gray-600">With just one click, we’ll generate your new shortened link instantly.</p>
+          </div>
+
+          <div className="flex flex-col items-center gap-3 bg-purple-100 hover:bg-purple-50 rounded-lg p-15 shadow-lg">
+            <Image className="mix-blend-darken opacity-60" src={"/step3.png"} width={80} height={80} alt="Step 3" />
+            <h3 className="text-purple-700 text-lg font-semibold">Share Anywhere</h3>
+            <p className=" text-gray-600">Copy and share your link. No tracking. No fuss. Totally private.</p>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }
