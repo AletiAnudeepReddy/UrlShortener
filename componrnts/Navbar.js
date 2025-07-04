@@ -15,7 +15,7 @@ const Navbar = () => {
             <Link className='hover:transition-all hover:font-bold' href="/contact"><li>Contact Us</li></Link>
             <li className='flex gap-3 items-center'>
                 <Link href="/shorten"><button className='hover:bg-purple-400 hover:h-9 bg-purple-500 rounded-lg shadow-lg p-3 py-1 font-bold'>Try Now</button></Link>
-                <Link href="/github"><button className='hover:bg-purple-400 hover:h-9 bg-purple-500 rounded-lg shadow-lg p-3 py-1 font-bold'>Github</button></Link>
+                <Link target='_blank' href="https://github.com/AletiAnudeepReddy"><button className='hover:bg-purple-400 hover:h-9 bg-purple-500 rounded-lg shadow-lg p-3 py-1 font-bold'>Github</button></Link>
             </li>
         </ul>
     </nav>

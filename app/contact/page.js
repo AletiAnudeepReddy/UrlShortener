@@ -4,7 +4,7 @@ import { Mail, MapPin, MessageCircle } from 'lucide-react' // You can use emoji 
 
 const Contact = () => {
   return (
-    <main className="min-h-[79vh] bg-purple-50 py-10 px-6 mt-10 md:px-24">
+    <main className="min-h-[80vh] bg-purple-50 py-10 px-6 mt-10 md:px-24">
       <section className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8">
         <h1 className="text-3xl font-bold text-purple-800 mb-6 text-center">Contact Us</h1>
 
@@ -54,7 +54,7 @@ const Contact = () => {
             <div>
               <p className="text-sm text-gray-600 mt-4">
                 Want to collaborate or report a bug?{" "}
-                <Link href="/github" className="text-purple-600 underline">
+                <Link target='_blank' href="https://github.com/AletiAnudeepReddy" className="text-purple-600 underline">
                   Visit our GitHub
                 </Link>
               </p>
